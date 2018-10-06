@@ -71,7 +71,7 @@ function networkCheck() {
     
             body.response.forEach(dev => {
                 if (dev.errorDescription !== null) {
-                    var status = `Date:  + ${date}\nDevice: ${dev.type}\nError: ${dev.errorDescription}`;
+                    var status = `Date:  + ${date}\nDevice: ${dev.type}\nError: ${dev.errorDescription}`; // dev.type should be dev.hostname - having issues.
                     errors ++
                     tweetStatus("Alert!\n" + status)
                 } else {
@@ -115,9 +115,9 @@ function hourlyNetworkCheck() {
     networkCheck()
  }
  
- // setInterval(hourlyNetworkCheck, 60 * 60 * 1000); // 1 Hour total
+  setInterval(hourlyNetworkCheck, 60 * 60 * 1000); // 1 Hour total
 
- setInterval(hourlyNetworkCheck, 5 * 60 * 1000); //  Hour total
+ // setInterval(hourlyNetworkCheck, 5 * 60 * 1000); //  5min  total
 
 
 // -----------------------------------------------------
