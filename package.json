@@ -1,0 +1,29 @@
+{
+  "name": "ncat_hack",
+  "version": "1.0.0",
+  "description": "Background",
+  "main": "keys.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ToriRae324/ncat_hack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ToriRae324/ncat_hack/issues"
+  },
+  "homepage": "https://github.com/ToriRae324/ncat_hack#readme",
+  "dependencies": {
+    "ajax": "0.0.4",
+    "dotenv": "^6.0.0",
+    "http": "0.0.0",
+    "jquery": "^3.3.1",
+    "jsdom": "^12.1.0",
+    "request": "^2.88.0",
+    "twitter": "^1.7.1"
+  }
+}
